@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1e40af" />
+    <meta name="description" content="AI Resume Analyzer - Smart resume matching using AI" />
+
+    <!-- Title & Favicon -->
+    <title>AI Resume Analyzer</title>
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-mkW1dHRXzK5e1KR13AVAXHyC42Wr2qBiFZFl2ydv5kGqYpEoC10LLb12F5P5C7EqOel4TZYlM6Jl67BCGJ7O1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Manifest -->
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+    <!-- Custom Styles -->
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        background-color: #f8fafc;
+        color: #111827;
+        height: 100%;
+      }
+
+      #root {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Loading fallback */
+      .loading-screen {
+        font-size: 1.2rem;
+        color: #2563eb;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        body {
+          background-color: #0f172a;
+          color: #f1f5f9;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>
+      <div class="loading-screen">
+        <i class="fas fa-spinner fa-spin"></i> Please enable JavaScript to use this app.
+      </div>
+    </noscript>
+    <div id="root">
+      <div class="loading-screen">
+        <i class="fas fa-spinner fa-spin"></i> Loading AI Resume Analyzer...
+      </div>
+    </div>
+  </body>
+</html>
